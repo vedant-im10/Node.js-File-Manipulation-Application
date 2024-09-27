@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NodeJS</title>
+  </head>
+
+  <body>
+    <form
+      style="
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: auto;
+        margin-top: 10%;
+      "
+    >
+      <input name="Source" type="text" placeholder="Name: Source File" />
+      <input
+        name="Destination"
+        type="text"
+        placeholder="Name: Destination File"
+        style="margin-top: 20px"
+      />
+      <div
+        style="margin-top: 20px; display: flex; justify-content: space-between"
+      >
+        <button formaction="/read">Read</button>
+        <button formmethod="post" formaction="/write">Write</button>
+        <button formmethod="post" formaction="/append">Append</button>
+        <button formmethod="post" formaction="/delete">Delete</button>
+      </div>
+    </form>
+  </body>
+</html>
